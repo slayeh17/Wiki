@@ -13,7 +13,7 @@ h1 {
 }
 
 textarea {
-    height: 90vh;
+    height: 50vh;
     width: 80%;
 }
 
@@ -28,8 +28,8 @@ textarea {
 }
 
 .sidebar {
-    background-color: #f0f0f0;
-    height: 100vh;
+    background-color: #9b9b9b;
+    height: 100%;
     padding: 20px;
 }
 
