@@ -5,6 +5,8 @@
     <ul>
         {% for title in found %}
             <li><a href="{% url 'article' title=title %}">{{title}}</a></li>
+        {% empty %}
+            <h3>No article found. Would you like to <a href="{% url 'create' %}">create</a> one.</h3>
         {% endfor %}
     </ul>
 {% endblock %}

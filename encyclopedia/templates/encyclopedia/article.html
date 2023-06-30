@@ -4,10 +4,11 @@
     <form action="{% url 'edit' %}" method="POST">
         {% csrf_token %}
         <input type="hidden" name="title" value="{{ title }}">
-        <input type="submit" value="Edit this page">
+        <br>
+        <input type="submit" value="Edit this page" class="btn btn-primary">
     </form>
     {% if article == None %}
-    <h1>{{title}} not found!</h1>
+    <h3>{{title}} not found! Would you like to <a href="{% url 'create' %}">create</a> it.</h3>
     {% else %}  
     <p> {{article|safe}} </p>
     {% endif %}

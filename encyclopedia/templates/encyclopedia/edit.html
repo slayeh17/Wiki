@@ -6,8 +6,9 @@
     {% csrf_token %}
     <h3>Edit Title:</h3>
     <input type="text" name="title" value="{{ title }}">
-    <h3>Edit Content in Markdown Format:</h3>
-    <textarea name="content" id="" cols="2" rows="7">{{ article }}</textarea>
-    <input type="submit" value="Save Edit">
+    <h3>Edit Article in Markdown Format:</h3>
+    <textarea name="content">{{ article }}</textarea>
+    <br>
+    <input type="submit" value="Save Edit" class="btn btn-success">
 </form>
 {% endblock %}
